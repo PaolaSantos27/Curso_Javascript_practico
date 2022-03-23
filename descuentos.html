@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y Descuentos</title>
+    <link rel="stylesheet" href="../taller-decuentos/descuento.css">
+    <link rel="stylesheet" href="../taller-decuentos/css/tabletdes.css" media="(min-width: 930px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="../assets/imgs/desFonds.jpg" alt="">
+    </header>
+
+    <main>
+        <section>
+            <h2>Calcula el descuento de tus productos </h2>
+            <form>
+                <label  for="InputPrice">Precio:</label>
+                <div>
+                    <input id="InputPrice" type="number" placeholder="Inserte números..">
+                </div>
+
+                <label for="InputDiscound">Descuento:</label>
+                <div >
+                    <input id="InputDiscound" type="number" placeholder="Inserte números..">
+                </div>
+
+                <button  type="button" onclick="onclickButtonPriceDiscount()">
+                    Calcular descuento
+                </button>
+
+                <label  for="InputCoupon">Tienes algún CUPON? </label>
+                <div >
+                    <input id="InputCoupon" type="text" placeholder="Inserte CUPON">
+                </div>
+
+                <button type="button" onclick="onclickButtonPriceCupon()">
+                    Descuento + CUPON
+                </button>
+
+                <p id="ResultP"></p>
+                <p id="ResultPC"></p>
+            
+            </form>
+        </section>
+    </main>
+   
+    
+    <script src="./descuentos.js"></script>
+</body>
+</html>
