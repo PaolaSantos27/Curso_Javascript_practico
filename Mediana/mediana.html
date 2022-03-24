@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mediana</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediana</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-  <h1>Mediana</h1>
-  
-  <script src="./mediana.js"></script>
+    <header class="header-mediana">
+        <h1>Calculadora de mediana</h1>
+    </header>
+    <main class="main-mediana">
+        <section>
+            <form action="" class="formulario-mediana">
+                <label for="InputMediana">Introduce tu elemento</label>
+                <input id="InputMediana" type="number"/>
+                <div>
+                    <button type="button" onclick="agregarUnElemento()">Agregar elemento</button>
+                    <button type="button" onclick="calcularMediana()">Calcula la mediana</button>
+                </div>
+                <label for="" style="display: block;">Para eliminar un elemmento introduzca el numero de su posición</label>
+                <button type="button" onclick="eliminarUnElemento()">Eliminar elemento</button>
+            </form>
+            <ol id="ListaDeElementos"></ol>
+        </section>
+        <p id="ResultMediana"></p>
+    </main>
+    <script src="./mediana.js"></script>
 </body>
 </html>
